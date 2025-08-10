@@ -21,6 +21,7 @@
   <header class="site-header is-sticky">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="PT Bota Makmur Perkasa">
+        <!-- SVG logo is generally optimal and scalable; keep as SVG. -->
         <img src="assets/img/logo-bmp.svg" alt="Logo PT Bota Makmur Perkasa" class="brand-mark" />
         <div class="brand-text">
           <strong>PT Bota Makmur Perkasa</strong>
@@ -55,8 +56,15 @@
           </div>
         </div>
         <div class="hero-visual">
+          <!-- TODO: Optimize this image. Consider using WebP format and proper sizes. Example:
+          <picture>
+            <source srcset="assets/img/hero.webp" type="image/webp">
+            <img src="assets/img/hero.jpg" alt="Operasi pengangkutan minyak dan gas" width="1200" height="800" loading="lazy" decoding="async" />
+          </picture>
+          -->
           <img class="rounded" alt="Operasi pengangkutan minyak dan gas" src="https://www.dunia-energi.com/wp-content/uploads/2021/10/Mobil-BBM.jpeg"/>
           <div class="badge-group">
+            <!-- TODO: Optimize these images. Consider using WebP with PNG fallback via <picture>. -->
             <img class="logo" src="assets/img/logo-pertamina.png" alt="Pertamina" />
             <img class="logo" src="assets/img/logo-elnusa.png" alt="Elnusa" />
           </div>
@@ -105,10 +113,17 @@
   <footer class="site-footer">
     <div class="container footer-top">
       <div class="footer-brand">
+        <!-- SVG is already optimal. If using large PNG/JPG assets here, consider <picture> with WebP. -->
         <img src="assets/img/logo-bmp.svg" alt="PT Bota Makmur Perkasa" />
         <p>© <span id="year"></span> PT Bota Makmur Perkasa. Seluruh hak cipta dilindungi.</p>
       </div>
       <div class="footer-logos">
+        <!-- TODO: Optimize footer logos. Convert to WebP when possible. Example structure:
+        <picture>
+          <source srcset="assets/img/logo-pertamina.webp" type="image/webp" />
+          <img class="logo" src="assets/img/logo-pertamina.png" alt="Pertamina" loading="lazy" decoding="async" />
+        </picture>
+        -->
         <img class="logo" src="assets/img/logo-pertamina.png" alt="Pertamina" loading="lazy" decoding="async" />
         <img class="logo logo-elnusa" src="assets/img/logo-elnusa.png" alt="Elnusa" loading="lazy" decoding="async" />
       </div>

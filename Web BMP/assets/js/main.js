@@ -17,19 +17,24 @@
   // Note: Ini masih uji coba dan belum diterapkan
   const contactForm = document.querySelector('#contact-form');
   if (contactForm) {
+    const successEl = document.getElementById('form-success-message');
     contactForm.addEventListener('submit', function(e) {
       e.preventDefault();
       const form = e.target;
-      const data = new FormData(form);
-      const name = data.get('name');
-      const email = data.get('email');
-      const subject = data.get('subject') || 'Pertanyaan';
-      const message = data.get('message');
-      alert('Terima kasih, ' + name + '!\n' +
-            'Subjek: ' + subject + '\n' +
-            'Pesan Anda telah diterima. Kami akan menghubungi ke ' + email + '.\n\n' +
-            'Note: Ini masih uji coba dan belum diterapkan.');
-      form.reset();
+      // Basic fake submit UX
+      form.querySelector('[type="submit"]').setAttribute('disabled', 'true');
+      setTimeout(() => {
+        form.reset();
+        form.querySelector('[type="submit"]').removeAttribute('disabled');
+        if (successEl) {
+          successEl.style.display = 'block';
+          successEl.classList.add('show');
+          setTimeout(() => {
+            successEl.style.display = 'none';
+            successEl.classList.remove('show');
+          }, 3500);
+        }
+      }, 600);
     });
   }
 
