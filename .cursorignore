@@ -1,0 +1,103 @@
+# AI Development and Training Files
+*.model
+*.weights
+*.checkpoint
+*.ckpt
+*.h5
+*.pb
+*.tflite
+*.onnx
+*.pkl
+*.joblib
+
+# Machine Learning Datasets
+data/
+datasets/
+training_data/
+test_data/
+*.csv
+*.json
+*.xml
+*.parquet
+
+# AI/ML Logs and Outputs
+logs/
+tensorboard/
+wandb/
+mlruns/
+experiments/
+outputs/
+results/
+
+# Python AI Libraries Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.env
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# AI Configuration Files
+config/
+configs/
+.config/
+settings.json
+parameters.json
+
+# Large Binary Files
+*.bin
+*.dat
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary AI Processing Files
+temp/
+tmp/
+cache/
+.cache/
+processed/
+preprocessed/
+
+# AI Model Artifacts
+artifacts/
+models/
+saved_models/
+checkpoints/
+snapshots/
+
+# Development Tools
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Documentation and Reports
+docs/
+documentation/
+reports/
+*.pdf
+*.docx
+*.pptx
+
+# Version Control
+.git/
+.gitignore
+.gitattributes

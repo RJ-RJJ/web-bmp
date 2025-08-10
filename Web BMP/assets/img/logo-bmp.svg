@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Logo PT Bota Makmur Perkasa">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#D8242A"/>
+      <stop offset="1" stop-color="#0072BC"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="20" fill="url(#g)"/>
+  <g fill="#fff">
+    <path d="M36 84V44h20c10 0 18 8 18 18s-8 22-22 22H36zm12-12h10c6 0 10-4 10-10s-4-10-10-10H48v20z"/>
+    <path d="M72 44h20v40H72z" opacity=".85"/>
+  </g>
+</svg>
+
+
